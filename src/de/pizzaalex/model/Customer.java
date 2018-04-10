@@ -5,7 +5,7 @@ package de.pizzaalex.model;
  *
  * @author AWagner
  */
-public class Customer extends User {
+public class Customer extends User{
    // public static int count = 0;
     public int id;
     public String firstname;
@@ -13,20 +13,20 @@ public class Customer extends User {
     public String street;
     public String postalcode;
     public String city;
-
     
 
     public Customer(String firstname, String lastname, String street, 
                  String postalcode, String place, String username) {
+        super(username, "customer");
         this.firstname = firstname;
         this.lastname = lastname;
         this.street = street;
         this.postalcode = postalcode;
         this.city = place;
-        this.setUsername(username);
     }
 
     public Customer() {
+        super("", "customer");
         this.id = 0;
         this.firstname = "";
         this.lastname = "";
