@@ -16,14 +16,14 @@ public class Customer extends User {
 
     
 
-    public Customer(int id, String firstname, String lastname, String street, 
-                 String postalcode, String place) {
-        this.id = id;
+    public Customer(String firstname, String lastname, String street, 
+                 String postalcode, String place, String username) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.street = street;
         this.postalcode = postalcode;
         this.city = place;
+        this.setUsername(username);
     }
 
     public Customer() {
