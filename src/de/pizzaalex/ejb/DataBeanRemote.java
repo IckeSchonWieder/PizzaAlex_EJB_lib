@@ -19,7 +19,7 @@ import javax.ejb.Remote;
 @Remote
 public interface DataBeanRemote {
     public ArrayList<Customer> getCustomers();
-    public void storeCustomer(Customer cus);
+    public Customer storeCustomer(Customer cus);
     
     public ArrayList<Pizza> getMenuList();
     public void storePizza(Pizza p);
