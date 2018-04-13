@@ -21,8 +21,9 @@ public interface DataBeanRemote {
     public ArrayList<Customer> getCustomers();
     public Customer storeCustomer(Customer cus);
     
+    
     public ArrayList<Pizza> getMenuList();
-    public void storePizza(Pizza p);
+    public Pizza storePizza(Pizza p);
     public void removePizza(Pizza p);
     
     public void storeOrder(Order ord);

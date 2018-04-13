@@ -11,27 +11,27 @@ public class User implements Serializable{
     private int userID;
     private String username;
     private String password;
-    private String role;
+    private String userRole;
 
     
     
     public User() {
     }
 
-    public User(String username, String role) {
+    public User(String username, String userRole) {
         this.username = username;
         this.userID = 0;
         this.password = "";
-        this.role = role;
+        this.userRole = userRole;
     }
     
     
     
-    public User(int userID, String username, String password, String role) {
+    public User(int userID, String username, String password, String userRole) {
         this.userID = userID;
         this.username = username;
         this.password = password;
-        this.role = role;
+        this.userRole = userRole;
     }
 
     public int getUserID() {
@@ -59,19 +59,19 @@ public class User implements Serializable{
        this.password = password;
     }
 
-    public String getRole() {
-        return role;
+    public String getUserRole() {
+        return userRole;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setUserRole(String userRole) {
+        this.userRole = userRole;
     }
     
     
     @Override
     public String toString() {
         return "User Nr " + userID + ": " + username 
-                + ", PW: " + password + ". Rolle: "+ role;
+                + ", PW: " + password + ". Rolle: "+ userRole;
     }
     
     
